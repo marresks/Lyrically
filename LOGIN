@@ -1,14 +1,14 @@
 HTML CODE
-
 <html>
     <head>
         <title>Login And Register Form</title>
+        <link rel="shortcut icon" type="img/png" href="images/Lyrically.png">
         <link rel="stylesheet" href="main.css">
     </head>
     <body>
       
+    
         <div class="backg">
-            
             <div class="form-box">
                 <div class="button-box">
                     <div id="btn"></div>
@@ -24,17 +24,17 @@ HTML CODE
             <form id="login" class="input-group">
                 <input type="text" class="input-field" placeholder="User Name" required>
                 <input type="password" class="input-field" placeholder="Password" required>
-                <input type="checkbox" class="checkbox"><span> Remember Password</span>
                 <button type="submit" class="submit-btn"> Log In </button>
             </form>
+
             <form id="signup" class="input-group">
                 <input type="text" class="input-field" placeholder="User Name" required>
                 <input type="email" class="input-field" placeholder="Email" required>
                 <input type="password" class="input-field" placeholder="Password" required>
-                <input type="checkbox" class="checkbox"><span> Remember Password</span>
                 <button type="submit" class="submit-btn"> Sign Up </button>
             </form>
             </div> 
+         
            
         </div>
 <script> 
@@ -63,21 +63,22 @@ CSS CODE
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+
 }
 
 .backg
 {
     height: 100%;
     width: 100%;   
-    background-image:  linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url(images/blackmountains.jpg);
-    background-position: center;
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url(images/Backgroundimg.jpg);
+    background-position: top;
     background-size: cover;
     position: absolute;
 }
 
-
 .form-box
 {
+    position: center;
     width: 400px;
     height: 430px;
     position: relative;
@@ -85,7 +86,6 @@ CSS CODE
     background: linear-gradient(to bottom, rgb(33, 33, 33), transparent);
     padding: 10px 0;
     overflow: hidden;
-
 }
 
 .button-box
