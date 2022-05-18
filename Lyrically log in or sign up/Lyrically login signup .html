@@ -1,0 +1,107 @@
+
+<html>
+    <head>
+        <title>Lyrically login/signup</title>
+        <link rel="shortcut icon" type="img/png" href="images/Lyrically.png">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+      
+    
+        <div class="backg">
+            <h1 class="header">Find and save your favorite songs in one place!</h1>
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                    <button type="button" class="toggle-btn" onclick="signup()">Sign Up</button>
+                </div>
+                
+               <div class="social-icons">
+                    <img src="images/fb.png">
+                    <img src="images/twt.png">
+                    <img src="images/ig.png">
+            </div> 
+
+          
+            <form id="login" class="input-group">
+              <input type="text" class="input-field" placeholder="User Name" required>
+              <input type="password" class="input-field" placeholder="Password" required>
+              <button type="submit" class="submit-btn"> Log In </button>
+            </form>
+
+            <form id="signup" class="input-group">
+                <input type="text" class="input-field" placeholder="User Name" required>
+                <input type="email" class="input-field" placeholder="Email" required>
+                <input type="password" class="input-field" placeholder="Password" required>
+                <button type="submit" class="submit-btn"> Sign Up </button>
+            </form>
+            
+        </div>
+        <div class="popup" onclick="myFunction()"> Terms and conditions
+            <span class="popuptext" id="myPopup">
+                <h3>Terms and Conditions</h3>
+                <p>
+                    Welcome to Lyrically!
+
+                    These terms and conditions outline the rules and regulations for the use of Lyrically.
+
+                    By accessing this website we assume you accept these terms and conditions. Do not continue to use Lyrically if you do not agree to take all of the terms and conditions stated on this page.
+
+                    The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and all Agreements: “Client”, “You” and “Your” refers to you, the person log on this website and compliant to the Company's terms and conditions. 
+
+                    Cookies
+                    We employ the use of cookies. By accessing Lyrically, you agreed to use cookies in agreement with Lyrically's Privacy Policy.
+                    Most interactive websites use cookies to let us retrieve the user's details for each visit. Cookies are used by our website to enable the functionality of certain areas to make it easier for people visiting our website. Some of our affiliate/advertising partners may also use cookies.
+
+                    Reservation of Rights
+                    We reserve the right to request that you remove all links or any particular link to our Website. You approve to immediately remove all links to our Website upon request. We also reserve the right to amen these terms and conditions and it's linking policy at any time. By continuously linking to our Website, you agree to be bound to and follow these linking terms and conditions.
+                    
+                    Disclaimer
+                    To the maximum extent permitted by applicable law, we exclude all representations, warranties and conditions relating to our website and the use of this website. Nothing in this disclaimer will:
+
+                    limit or exclude our or your liability for death or personal injury;
+                    limit or exclude our or your liability for fraud or fraudulent misrepresentation;
+                    limit any of our or your liabilities in any way that is not permitted under applicable law; or
+                    exclude any of our or your liabilities that may not be excluded under applicable law.
+                    The limitations and prohibitions of liability set in this Section and elsewhere in this disclaimer: (a) are subject to the preceding paragraph; and (b) govern all liabilities arising under the disclaimer, including liabilities arising in contract, in tort and for breach of statutory duty.
+                    As long as the website and the information and services on the website are provided free of charge, we will not be liable for any loss or damage of any nature.
+
+               </p>
+               
+            </span>
+
+            <script>
+                // When the user clicks on <div>, open the popup
+                function myFunction() {
+                  var popup = document.getElementById("myPopup");
+                  popup.classList.toggle("show");
+                }
+                </script>
+
+          </div>
+                      
+
+       
+    </div>          
+
+        
+<script> 
+    var x = document.getElementById("login")
+    var y = document.getElementById("signup")
+    var z = document.getElementById("btn")
+
+    function signup() {
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "110px";
+    }
+    function login() {
+        x.style.left = "50";
+        y.style.left = "450";
+        z.style.left = "0";
+    }
+</script>
+
+    </body>
+</html>
